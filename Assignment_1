@@ -1,0 +1,333 @@
+//1.Write a Java program to print 'Hello' on screen and then print your name on a separate line.
+
+
+public class Que_1 {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello"+"\n"+"PRATIMA JADHAV"); // + is concatenation operator
+		//System.out.println("PRATIMA JADHAV");  \n for new line
+	}
+
+}
+
+/*
+//2.
+
+
+
+public class Que_2 {
+
+	public static void main(String[] args) 
+	{
+		int a=74;
+		int b=36;
+		int sum=a+b;
+		System.out.println("sum="+ sum);	
+		
+	}
+
+}
+
+
+// 3. Write a Java program to divide two numbers and print on the screen.
+
+
+public class Que_3 {
+
+	public static void main(String[] args) 
+	{
+		int a=50;
+		int b=3;
+		int div=a/b;
+		System.out.println("Div = "+div);	
+
+	}
+
+}
+
+
+//4. Write a Java program to print the result of the following operations.
+
+
+public class Que_4 {
+
+	public static void main(String[] args) 
+	{
+		System.out.println(-5+(8*6));
+		System.out.println((55+9)%9);
+		System.out.println(20+(-3*5)/8);
+		System.out.println(5 + 15 / 3 * 2 - 8 % 3);
+		
+
+	}
+
+}
+
+
+// 5. Write a Java program that takes two numbers as input and display the product of two numbers.
+
+import java.util.Scanner;
+
+public class Que_5 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner s=new Scanner(System.in);
+		
+		System.out.println("1st number is : ");
+		int a=s.nextInt();
+		
+		System.out.println("2nd number is : ");
+		int b=s.nextInt();
+		
+		System.out.println(a+ "*" + b + "=" + a*b );
+			
+		
+	}
+
+}
+
+
+//6. Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of two numbers.
+
+import java.util.Scanner;
+
+public class Que_6 {
+
+	public static void main(String[] args) 
+	{
+		Scanner s= new Scanner(System.in);
+		
+		System.out.println("Input first number : ");
+		int num1= s.nextInt();
+		
+		System.out.println("Input second number : ");
+		int num2= s.nextInt();
+		
+		int sum=num1+num2;
+		int mul=num1*num2;
+		int div=num1/num2 ;
+		int sub=num1-num2;
+		int mod=num1%num2;
+		
+		System.out.println(num1 + "+" + num2 + "=" + sum );
+		System.out.println(num1 + "*" + num2 + "=" + mul  );
+		System.out.println(num1 + "/" + num2 + "=" + div );
+		System.out.println(num1 + "-" + num2 + "=" + sub );
+		System.out.println(num1 + "%" + num2 + "=" + mod );
+		
+	}
+
+}
+
+
+// 7. Write a Java program that takes a number as input and prints its multiplication table upto 10.
+
+import java.util.Scanner;
+
+public class Que_7 {
+
+	public static void main(String[] args) 
+	{
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter number : ");
+		int a= s.nextInt();
+		
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(a + "*" + i + "=" + (a*i));
+		}
+		
+
+	}
+
+}
+
+
+// 8. Write a Java program to display the following pattern.
+
+
+public class Que_8 {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("   j    a  v     v  a");
+		System.out.println("   j   a a  v   v  a a");
+		System.out.println("j  j  aaaaa  v v  aaaaa");
+		System.out.println(" jj  a     a  v  a     a");
+
+	}
+
+}
+
+//9. Write a Java program to compute the specified expressions and print the output.
+
+
+public class Que_9 {
+
+	public static void main(String[] args) 
+	{
+		System.out.println((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+
+	}
+
+}
+
+
+// 10. Write a Java program to compute a specified formula.
+
+
+public class Que_10 {
+
+	public static void main(String[] args) 
+	{
+           System.out.println(4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11)));
+
+	}
+
+}
+
+
+// 11. Write a Java program to print the area and perimeter of a circle.
+
+
+public class Que_11 {
+
+	public static void main(String[] args)
+	{
+		double radius=7.5;
+		
+		double perimeter=2*Math.PI*radius;
+		
+		double area=Math.PI*radius*radius; // PI value is stored in predefined class Math
+		
+		System.out.println("Perimeter is : " + perimeter);
+		
+		System.out.println("Area is : " + area);
+		
+
+	}
+
+}
+
+
+// 12. Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+
+import java.util.Scanner;
+
+public class Que_12 {
+
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter three numbers : ");
+		int a=s.nextInt();
+		int b=s.nextInt();
+		int c=s.nextInt();
+		
+		double avg=(a+b+c)/3;
+		System.out.println("Avearage is : " + avg);
+
+	}
+
+}
+
+
+// 13. Write a Java program to print the area and perimeter of a rectangle.
+
+
+public class Que_13 {
+
+	public static void main(String[] args) 
+	{
+		double width=5.6;
+		double height=8.5;
+		
+		double area=width*height;
+		
+		double perimeter=2*(width+height);
+		
+		
+		System.out.printf("Area of rectangle is : %.2f \n", area); // printf() is a function which takes two arguments one is string and 2nd is 
+		
+		System.out.printf("Perimeter of rectangle is : %.2f", perimeter);
+	}
+
+}
+
+
+// 14. Write a Java program to print an American flag on the screen.
+
+
+public class Que_14 {
+
+	public static void main(String[] args) 
+	{
+		System.out.println("* * * * * * ===========================");
+		System.out.println(" * * * * *  ===========================");
+		System.out.println("* * * * * * ===========================");
+		System.out.println(" * * * * *  ===========================");
+		System.out.println("* * * * * * ===========================");
+		System.out.println(" * * * * *  ===========================");
+		System.out.println("* * * * * * ===========================");
+		System.out.println(" * * * * *  ===========================");
+		System.out.println("* * * * * * ===========================");
+		System.out.println("=======================================");
+		System.out.println("=======================================");
+		System.out.println("=======================================");
+		System.out.println("=======================================");
+		System.out.println("=======================================");
+		System.out.println("=======================================");
+
+	}
+
+}
+
+
+// 15. Write a Java program to swap two variables.
+
+
+public class Que_15 {
+
+	public static void main(String[] args) 
+	
+	{
+		int a=30;
+		int b=40;
+		
+		int temp;
+		
+		System.out.println("Value of a and b before swap : " + "a" + "=" + a + "," + "b" + "=" + b);
+		temp=a;
+		a=b;
+		b=temp;
+		
+		System.out.println("Value of a and b after swap : " + "a" + "=" + a + "," + "b" + "=" + b);
+
+	}
+
+}
+
+
+// 16. Write a Java program to print a face.
+
+
+public class Que_16 {
+
+	public static void main(String[] args) 
+	{
+		System.out.println(" +\"\"\"+"); // \ is used to print special character
+		System.out.println("[|o o|]");
+		System.out.println(" | ^ |");
+		System.out.println(" |'-'|");
+		System.out.println(" +---+");	
+
+	}
+
+}
+
+
+// */
