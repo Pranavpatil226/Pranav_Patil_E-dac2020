@@ -1,0 +1,10 @@
+use books;
+create table Issue(Lib_Issue_Id int(10),Book_No int(6),Member_Id int (5),Issue_Date date,Return_date date);
+insert into Issue values('7001','101','1','2006/12/10',null);
+insert into Issue values('7002','102','2','2006/12/10',null);
+insert into Issue values('7003','103','1','2006/01/10',null);
+insert into Issue values('7004','104','2','2006/07/10',null);
+insert into Issue values('7005','105','3','2006/11/10',null);
+update Issue set Return_date=null;
+select * from Issue;
+select Lib_Issue_Id,Book_No,Member_Id,date_format(Issue_Date,'%d-%b-%y') as Issue_Date,Return_date from Issue;
